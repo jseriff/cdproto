@@ -19,6 +19,7 @@ type EventAttachedToTarget struct {
 // See: https://chromedevtools.github.io/devtools-protocol/tot/Target#event-detachedFromTarget
 type EventDetachedFromTarget struct {
 	SessionID SessionID `json:"sessionId"` // Detached session identifier.
+	TargetID TargetID `json:"targetId"`
 }
 
 // EventReceivedMessageFromTarget notifies about a new protocol message
